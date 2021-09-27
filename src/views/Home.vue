@@ -17,16 +17,17 @@
         ></v-select>
      <v-spacer></v-spacer>
    </v-row>
+   <Tab />
  </div>
 </template>
 
 <script>
- 
+ import Tab from '../components/Home/Tab.vue'
   export default {
     name: 'Home',
 
     components: {
-     
+     Tab
     },
     data(){
       return {
