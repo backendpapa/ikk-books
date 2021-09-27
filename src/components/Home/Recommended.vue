@@ -23,7 +23,7 @@
 
 </carousel>
 
-<carousel autoWidth class="d-flex d-sm-none" items="1" loop center style="height:50vh">
+<carousel autoWidth class="d-flex d-sm-none" items="1"  center style="height:50vh">
 
     <v-card flat v-for="i in 13" :key="i.i" width="200" height="300"  class="white pa-2 ma-1">
        <div>

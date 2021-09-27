@@ -5,8 +5,8 @@
           {{ item.tab }}
         </v-tab>
       </v-tabs>
-      <v-tabs-items v-model="tab"  >
-        <v-tab-item v-for="item in items" :key="item.tab">
+      <v-tabs-items touchless v-model="tab"  >
+        <v-tab-item  v-for="item in items" :key="item.tab">
           <v-card color="" style="background-color:#F3F2F7" flat>
             <v-card-text>
               <component v-bind:is="item.content"></component>
