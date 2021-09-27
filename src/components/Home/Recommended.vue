@@ -2,9 +2,9 @@
   <div style="background-color:#F3F2F7">
       
     
-          <carousel class="d-none d-sm-flex" items="6" style="height:50vh">
+          <carousel :nav="false" autoWidth class="d-none d-sm-flex" items="6" style="height:50vh">
 
-    <v-card flat v-for="i in 13" :key="i.i" width="200" height="300"  class="white pa-2">
+    <v-card flat v-for="i in 13" :key="i.i" width="200" height="300"  class="white ma-1 pa-2">
        <div>
            <v-row no-gutters>
                <v-spacer></v-spacer>
