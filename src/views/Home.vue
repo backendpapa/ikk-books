@@ -1,6 +1,6 @@
 <template>
  <div>
-   <v-row class="mt-4" justify="center" align="center" no-gutters >
+   <v-row class="mt-4 animate__animated animate__fadeIn animate__slow" justify="center" align="center" no-gutters >
      <v-spacer></v-spacer>
      <v-text-field  filled  placeholder="Type book name or author" append-icon="mdi-magnify"   class="black--text text-caption font-weight-bold" @click:append="toggleMarker" solo flat color="none" background-color="white" ></v-text-field>
   

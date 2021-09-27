@@ -7,19 +7,19 @@
       
       dense
     >
-      <div class="d-flex align-center  mt-3">
+      <div class="d-flex align-center  mt-3 animate__animated animate__fadeInLeft">
        <p class="font-weight-bold text-h6">BOOKS</p>
       </div>
 
       
-<div class="d-flex align-center  " style="margin-left:10%">
+<div class="d-flex align-center animate__animated animate__fadeIn animate__slower " style="margin-left:10%">
 
       <v-btn text to="/" plain style="text-transform:none" class="text-caption font-weight-bold d-none d-sm-flex" :color="$route.path=='/'?'purple':'black'">Library</v-btn>
        <v-btn text to="/orders" plain style="text-transform:none" class="text-caption font-weight-bold d-none d-sm-flex" :color="$route.path=='/orders'?'purple':'black'">Orders</v-btn>
         <v-btn text to="/admin" plain style="text-transform:none" class="text-caption font-weight-bold d-none d-sm-flex" :color="$route.path=='/admin'?'purple':'black'">Admin</v-btn>
 </div>
       <v-spacer></v-spacer>
-    <div class="d-flex align-center ">
+    <div class="d-flex align-center animate__animated animate__headShake  ">
       <v-avatar class="shade d-none d-sm-flex" size="30" rounded="true">
       <v-img src="./assets/logoing.jpg"></v-img>
     </v-avatar>
@@ -36,10 +36,10 @@
       absolute
       temporary
     >
-     <v-row no-gutters justify="center" align="center" style="height:30vh;background-color:#F1F1F1" >
+     <v-row no-gutters class="animate__animated animate__fadeIn" justify="center" align="center" style="height:30vh;background-color:#F1F1F1" >
         <div>
            <p class="text-center"><v-avatar  class="shade " size="70" rounded="true">
-      <v-img src="./assets/logoing.jpg"></v-img>
+      <v-img lazy-src="./assets/logoing.jpg" src="./assets/logoing.jpg"></v-img>
     </v-avatar></p>
     <p class="text-body-1 text-center  font-weight-bold "> Backend Papa</p>
      <p class="text-caption text-center mt-n5 grey--text "> Javascript developer</p>
@@ -48,7 +48,7 @@
 
       <v-divider></v-divider>
 
-      <v-list dense>
+      <v-list class="animate__animated animate__fadeIn animated__slower" dense>
         <v-list-item
           v-for="item in items"
           :key="item.title"
